@@ -29,6 +29,6 @@ app.get("/api/whoami", function (req, res) {
   res.json({ipaddress: req.ip , language: req.headers["accept-language"], software: req.headers["user-agent"]})
 })
 // listen for requests :)
-var listener = app.listen(3000, function () {
+var listener = app.listen(port, function () {
   console.log('Your app is listening on port ' + listener.address().port);
 });
